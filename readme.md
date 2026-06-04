@@ -63,11 +63,13 @@ python client.py
 ```
 
 ## Структура проекта
+```text
 furniture_store/
 ├── backend/           (Django бэкенд)
 │   ├── api/          (Основное приложение)
 │   ├── furniture_store/  (Настройки Django)
 │   └── manage.py
 ├── desktop_client/   (Tkinter клиент)
+```
 ├── requirements.txt  (Зависимости)
 └── README.md
