@@ -24,36 +24,43 @@
 ```bash
 git clone https://github.com/luckerman-tech/furniture_store.git
 cd furniture_store
+```
 
 ### 2. Переключение на нужную ветку
 ```bash
 git checkout dev
 git checkout main
+```
 
 ### 3. Настройка виртуального окружения
 ```bash
 python -m venv venv
 venv\Scripts\activate (Windows)
 source venv/bin/activate (Linux/Mac)
+```
 
 ### 4. Установка зависимостей
 ```bash
 pip install -r requirements.txt
+```
 
 ### 5. Применение миграций
 ```bash
 cd backend
 python manage.py migrate
 python manage.py createsuperuser
+```
 
 ### 6. Запуск сервера
 ```bash
 python manage.py runserver
+```
 
 ### 7. Запуск клиента
 ```bash
 cd desktop_client
 python client.py
+```
 
 ## Структура проекта
 furniture_store/
