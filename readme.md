@@ -70,6 +70,6 @@ furniture_store/
 │   ├── furniture_store/  (Настройки Django)
 │   └── manage.py
 ├── desktop_client/   (Tkinter клиент)
-```
 ├── requirements.txt  (Зависимости)
 └── README.md
+```
