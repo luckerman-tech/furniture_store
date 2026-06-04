@@ -1,0 +1,13 @@
+# Автоматическое определение переносов строк
+* text=auto
+
+# Python файлы
+*.py text eol=lf
+
+# Windows файлы
+*.bat text eol=crlf
+
+# Двоичные файлы
+*.png binary
+*.jpg binary
+*.ico binary
