@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>furniture_store</Name>
+    <RootNamespace>furniture_store</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <Environment>
+    </Environment>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <WebBrowserPort>8000</WebBrowserPort>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a6568a91-fd47-4094-b842-819465cb9463</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>backend\manage.py</StartupFile>
+    <SearchPath>.</SearchPath>
+    <WorkingDirectory>.\backend</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>furniture_store.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <PythonRunWebServerCommandType />
+    <PythonDebugWebServerCommandType />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="backend\api\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\db_managers\orm_managers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\db_managers\sql_managers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\forms.py" />
+    <Compile Include="backend\api\models.py" />
+    <Compile Include="backend\api\permissions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\serializers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\services\discount_strategy.py" />
+    <Compile Include="backend\api\services\order_processing_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\services\order_service.py" />
+    <Compile Include="backend\api\tests.py" />
+    <Compile Include="backend\api\tests\e2e\base_e2e_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\test_auth_flow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\test_full_order_flow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\test_reports_flow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\test_search_and_filter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\e2e\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\test_auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\test_managers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\test_models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\test_services.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\test_views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\module\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\api\views.py" />
+    <Compile Include="backend\api\__init__.py" />
+    <Compile Include="backend\api\migrations\__init__.py" />
+    <Compile Include="backend\manage.py" />
+    <Compile Include="backend\furniture_store\__init__.py" />
+    <Compile Include="backend\furniture_store\settings.py" />
+    <Compile Include="backend\furniture_store\urls.py" />
+    <Compile Include="backend\furniture_store\wsgi.py" />
+    <Compile Include="backend\furniture_store\test_settings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backend\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="desktop_client\client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="desktop_client\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="desktop_client\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="backend\api\" />
+    <Folder Include="backend\api\migrations\" />
+    <Folder Include="backend\api\db_managers\" />
+    <Folder Include="backend\api\tests\" />
+    <Folder Include="backend\api\services\" />
+    <Folder Include="backend\api\static\" />
+    <Folder Include="backend\api\static\api\" />
+    <Folder Include="backend\api\static\api\content\" />
+    <Folder Include="backend\api\static\api\fonts\" />
+    <Folder Include="backend\api\static\api\scripts\" />
+    <Folder Include="backend\api\templates\" />
+    <Folder Include="backend\api\templates\api\" />
+    <Folder Include="backend\api\tests\e2e\" />
+    <Folder Include="backend\api\tests\module\" />
+    <Folder Include="backend\furniture_store\" />
+    <Folder Include="backend\" />
+    <Folder Include="desktop_client\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backend\db.sqlite3" />
+    <Content Include="db.sqlite3" />
+    <Content Include="backend\api\static\api\content\bootstrap.css" />
+    <Content Include="backend\api\static\api\content\bootstrap.min.css" />
+    <Content Include="backend\api\static\api\content\site.css" />
+    <Content Include="backend\api\static\api\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="backend\api\static\api\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="backend\api\static\api\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="backend\api\static\api\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="backend\api\static\api\scripts\bootstrap.js" />
+    <Content Include="backend\api\static\api\scripts\bootstrap.min.js" />
+    <Content Include="backend\api\static\api\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="backend\api\static\api\scripts\jquery-1.10.2.js" />
+    <Content Include="backend\api\static\api\scripts\jquery-1.10.2.min.js" />
+    <Content Include="backend\api\static\api\scripts\jquery-1.10.2.min.map" />
+    <Content Include="backend\api\static\api\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="backend\api\static\api\scripts\jquery.validate.js" />
+    <Content Include="backend\api\static\api\scripts\jquery.validate.min.js" />
+    <Content Include="backend\api\static\api\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="backend\api\static\api\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="backend\api\static\api\scripts\modernizr-2.6.2.js" />
+    <Content Include="backend\api\static\api\scripts\respond.js" />
+    <Content Include="backend\api\static\api\scripts\respond.min.js" />
+    <Content Include="backend\api\static\api\scripts\_references.js" />
+    <Content Include="backend\api\templates\api\about.html" />
+    <Content Include="backend\api\templates\api\contact.html" />
+    <Content Include="backend\api\templates\api\index.html" />
+    <Content Include="backend\api\templates\api\layout.html" />
+    <Content Include="backend\api\templates\api\login.html" />
+    <Content Include="backend\api\templates\api\loginpartial.html" />
+    <Content Include="desktop_client\requirements.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.9</Version>
+      <Description>env (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

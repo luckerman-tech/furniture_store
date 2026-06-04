@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <MaxCpuCount>0</MaxCpuCount>
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetFrameworkVersion>net472</TargetFrameworkVersion>
+  </RunConfiguration>
+  
+  <Python>
+    <PythonPath>C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\python.exe</PythonPath>
+    <WorkingDirectory>backend</WorkingDirectory>
+    <ProjectHome>backend</ProjectHome>
+    <SearchPaths>
+      <SearchPath>.</SearchPath>
+      <SearchPath>backend</SearchPath>
+    </SearchPaths>
+    <EnvironmentVariables>
+      <DJANGO_SETTINGS_MODULE>furniture_store.settings</DJANGO_SETTINGS_MODULE>
+    </EnvironmentVariables>
+  </Python>
+  
+  <TestRunParameters>
+    <Parameter name="webAppUrl" value="http://localhost:8000" />
+  </TestRunParameters>
+</RunSettings>
